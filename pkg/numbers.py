@@ -2,14 +2,7 @@ import os
 def add_5_to_file():
     if os.path.exists("number.txt") == False:
         with open("number.txt","w") as file:
-            file.write("0")
-
-    with open("number.txt","r") as file:
-        a =  file.read()
-    
-    if a == "":
-        with open("number.txt","w") as file:
-            file.write("0")
+            file.write("5")
 
     else:
         with open("number.txt","r") as file:
